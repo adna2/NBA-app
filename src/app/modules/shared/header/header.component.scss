@@ -1,0 +1,56 @@
+@import '/src/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+:host {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    height: 45px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(md) {
+        height: 55px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nba-logo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nba-label {
+    font-size: 40px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 30px;
+    transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: red;
+}

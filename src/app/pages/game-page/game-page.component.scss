@@ -1,0 +1,23 @@
+@import '/src/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+.container {
+    background-color: white;
+    padding: 30px;
+}
+
+.game-page {
+    padding: 10px;
+    @include media-breakpoint-up(md) {
+        padding: 0;
+    }
+}
+
+.team {
+    cursor: pointer;
+    color: blue;
+}
+
+.team:hover {
+    background-color: aliceblue;
+}

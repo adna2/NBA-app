@@ -1,0 +1,16 @@
+@import '/src/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+.content {
+    padding-top: 50px;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
+    background-color:aliceblue;
+    padding-bottom: 50px;
+
+    @include media-breakpoint-up(md) {
+        min-height: 100vh;
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+}

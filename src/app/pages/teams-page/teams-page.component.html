@@ -1,0 +1,47 @@
+<div class="teams-page">
+    <div class="container">
+        <h4 class="conference-name">Eastern Conference</h4>
+        <div class="conference">
+            <div class="division">
+                <h6>Atlantic</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Atlantic'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+            <div class="division">
+                <h6>Central</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Central'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+            <div class="division">
+                <h6>Southeast</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Southeast'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h4 class="conference-name">Western Conference</h4>
+        <div class="conference">
+            <div class="division">
+                <h6>Northwest</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Northwest'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+            <div class="division">
+                <h6>Pacific</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Pacific'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+            <div class="division">
+                <h6>Southwest</h6>
+                <ul class="teams-list">
+                    <li class="team" *ngFor="let team of teams | filterByDivision:'Southwest'" [routerLink]="['/team', team.id]">{{ team.full_name }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

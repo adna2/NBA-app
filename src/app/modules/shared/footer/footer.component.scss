@@ -1,0 +1,38 @@
+@import '/src/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+:host {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer{
+    height: 45px;
+    color: #e6e6e6;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(md) {
+        height: 55px;
+    }
+}
+
+.links, .year {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.link, .year {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 30px;
+    transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: red;
+}

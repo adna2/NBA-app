@@ -1,0 +1,14 @@
+@import '/src/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+.container {
+    background-color: white;
+    padding: 30px;
+}
+
+.team-page {
+    padding: 10px;
+    @include media-breakpoint-up(md) {
+        padding: 0;
+    }
+}

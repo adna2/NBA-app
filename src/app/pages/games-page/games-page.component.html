@@ -1,0 +1,15 @@
+<div class="games-page">
+    <div class="game-info-container">
+      <div class="game-info" *ngFor="let game of games" [routerLink]="['/game', game.id]">
+        <div class="status">{{ game.status }}</div>
+        <div class="score">
+          <div class="team-name">{{ game.home_team.name }}</div>
+          <div class="team-score">{{ game.home_team_score }}</div>
+          <div class="vs">VS</div>
+          <div class="team-name">{{ game.visitor_team.name }}</div>
+          <div class="team-score">{{ game.visitor_team_score }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

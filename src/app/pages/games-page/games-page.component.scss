@@ -1,0 +1,61 @@
+.games-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.game-info:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.team-score {
+    font-size: 1.6rem;
+    margin: 0 10px;
+}
+
+.vs {
+    font-size: 1.2rem;
+    margin: 0 10px;
+}

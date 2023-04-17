@@ -1,0 +1,16 @@
+<div class="game-page">
+    <div class="container">
+      <h1>Game Details</h1>
+      <p>Date: {{ game?.date | date:'mediumDate' }}</p>
+      <p class="team" [routerLink]="['/team', game?.home_team?.id]">Home Team: {{game?.home_team?.full_name}}</p>
+      <p>Home Team Score: {{ game?.home_team_score }}</p>
+      <p class="team" [routerLink]="['/team', game?.visitor_team?.id]">Visitor Team: {{game?.visitor_team?.full_name}}</p>
+      <p>Visitor Team Score: {{ game?.visitor_team_score }}</p>
+      <p>Period: {{ game?.period }}</p>
+      <p>Postseason: {{ game?.postseason }}</p>
+      <p>Season: {{ game?.season }}</p>
+      <p>Status: {{ game?.status }}</p>
+      <p>Time: {{ game?.time }}</p>
+    </div>
+  </div>
+  
